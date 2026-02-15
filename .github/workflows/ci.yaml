@@ -27,7 +27,7 @@ jobs:
         run: |
           files=$(gofmt -s -l .)
 
-          if [ -n "$files"]; then
+          if [ -n "$files" ]; then
             echo "Code is NOT formatted"
             echo "$files"
             exit 1
