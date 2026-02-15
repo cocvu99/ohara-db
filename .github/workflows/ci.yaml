@@ -25,7 +25,7 @@ jobs:
 
       - name: Check code formatting 
         run: |
-          files = $(gofmt -s -l .)
+          files=$(gofmt -s -l .)
 
           if [ -n "$files"]; then
             echo "Code is NOT formatted"
