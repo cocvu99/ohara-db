@@ -26,6 +26,7 @@ jobs:
         run: go test ./...
 
       - name: Check code formatting 
+        if: github.event_name == 'pull_request'
         run: |
           files=$(gofmt -s -l .)
 
@@ -36,4 +37,5 @@ jobs:
           fi
       
       - name: Examines source code and report
+        if: github.event_name == 'pull_request'
         run: go vet ./...

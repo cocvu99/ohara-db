@@ -27,7 +27,7 @@ func (node *BTreeInternalNode) FindLastLE(findKey int) int {
 // Insert a key-children pair into the Internal Node
 func (node *BTreeInternalNode) InsertKV(insertKey int, insertChild Node) {
 	// Find last less or equal as position to insert
-	pos := node.FindLastLE(insertKey)
+	// pos := node.FindLastLE(insertKey)
 
 }
 
