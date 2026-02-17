@@ -37,5 +37,9 @@ jobs:
           fi
       
       - name: Examines source code and report
-        if: github.event_name == 'pull_request'
+        if: ${{ github.event_name == 'pull_request' }}
         run: go vet ./...
+      
+      - name: Announcement
+        if: ${{ github.ref == 'refs/heads/main' }}
+        run: echo "This commit is ready to be deploy on branch $GITHUB_REF"
