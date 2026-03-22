@@ -1,7 +1,24 @@
 # ohara-db
+# ohara-db
+
+[![CI Pipeline](https://github.com/cocvu99/ohara-db/actions/workflows/ci.yaml/badge.svg)](https://github.com/cocvu99/ohara-db/actions)
+
+## Table of Contents
+- [About the Project](#about-the-project)
+  - [Architecture Design](#architecture-design)
+- [Getting Started](#getting-started)
+- [Features Implemented](#features-implemented)
+- [Known Issues & Current Constraints](#known-issues--current-constraints)
+- [Roadmap & Further Features](#roadmap--further-features)
 
 ## Project Overview
-A relational database engine built from scratch using Go. This project aims to implement a disk-based B+ Tree storage engine, a Key-Value interface, and essential database capabilities.
+A relational database engine built from scratch using Go. This project is a hands-on implementation to deeply understand database internals, focusing on a disk-based B+ Tree storage engine, Key-Value interface, and concurrency control.
+
+
+### Architecture Design
+![B+ Tree Architecture](docs/images/Bplus-tree.jpg)
+
+<!-- *(Chỗ này sẽ cần 2-3 câu giải thích ngắn gọn về luồng hoạt động)* -->
 
 ## Getting Started
 
@@ -16,11 +33,6 @@ go build -v ./...
 # Run unit tests
 go test -v ./...
 ```
-
-## Current Architecture
-- **Language:** Go (1.24.5)
-- **Module:** github.com/cocvu99/ohara-db
-- **Core Structure:** In-memory B+ Tree
 
 ## Features Implemented
 - **BTreeInternalNode**: Defines the structure for Internal Node with keys and children pointers.
