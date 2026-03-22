@@ -3,11 +3,11 @@
 [![CI Pipeline](https://github.com/cocvu99/ohara-db/actions/workflows/ci.yaml/badge.svg)](https://github.com/cocvu99/ohara-db/actions)
 
 ## Table of Contents
-- [About the Project](#about-the-project)
+- [Project Overview](#project-overview)
   - [Architecture Design](#architecture-design)
 - [Getting Started](#getting-started)
-- [Roadmap & Future Features](#roadmap-&-Future-Features)
-- [Known Issues & Current Constraints](#Known-Issues-&-Current-Constraints)
+- [Roadmap & Future Features](#roadmap--future-features)
+- [Known Issues & Current Constraints](#known-issues--current-constraints)
 
 ## Project Overview
 A relational database engine built from scratch using Go. This project is a hands-on implementation to deeply understand database internals, focusing on a disk-based B+ Tree storage engine, Key-Value interface, and concurrency control.
